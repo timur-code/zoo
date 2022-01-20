@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <form th:action="@{/addAnimal}" th:method="POST">
+            <select name="animalOption">
+                <option th:value="1">Crow</option>
+                <option th:value="2">Penguin</option>
+                <option th:value="3">Ostrich</option>
+                <option th:value="4">Sparrow</option>
+                <option th:value="5">Tiger</option>
+                <option th:value="6">Turtle</option>
+                <option th:value="7">Wolf</option>
+                <option th:value="8">Fox</option>
+                <option th:value="9">Pike</option>
+                <option th:value="10">Shark</option>
+            </select>
+            <input type="number" name="size">
+            <input type="number" name="cageNumber">
+            <button type="submit">Submit </button>
+        </form>
+    </body>
+</html>
